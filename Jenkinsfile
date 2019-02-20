@@ -1,9 +1,8 @@
 pipeline {
-    // agent {
-    //     node {
-    //         label 'LS'
-    //     }
-    // }
+    agent {
+        node ('master'){
+        }
+    }
 
     environment {
         SLEEP_TIME_IN_SECONDS = 100
