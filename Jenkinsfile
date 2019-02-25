@@ -15,7 +15,7 @@ pipeline {
         stage("wait_prior_starting_smoke_testing") {
             steps{
                 sh """
-                echo "lol, ale padakaaa"
+                echo "lol, ale padakaaaa"
                 echo "Waiting ${env.SLEEP_TIME_IN_SECONDS} seconds for deployment to complete prior starting smoke testing"
                 sleep ${env.SLEEP_TIME_IN_SECONDS}
                 """
